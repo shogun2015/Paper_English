@@ -75,7 +75,7 @@ and
 ::
 
   {
-      "name": "xelatex ➞ bibtex ➞ xelatex",
+      "name": "xelatex ➞ bibtex ➞ xelatex*2",
       "tools": [
         "xelatex",
         "bibtex",

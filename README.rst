@@ -1,7 +1,5 @@
 ==================
-Paper English Learning 
-based on a template of
-Thesis LaTeX Template for Beijing University of Posts and Telecommunications
+Paper English Learning based on a template of Thesis LaTeX Template for Beijing University of Posts and Telecommunications
 ==================
 
 |license|
@@ -60,29 +58,31 @@ Configure the TeXStudio to use ``xelatex`` as default compiler and press compile
 Add the following compile instructions at the corresponding position in settings.json:
 
 ::
-{
-    "name": "xelatex",
-    "command": "xelatex",
-    "args": [
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "%DOC%"
-    ]
-},
+
+    {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+        ]
+    },
 
 and
 
 ::
-{
-    "name": "xelatex ➞ bibtex ➞ xelatex",
-    "tools": [
-      "xelatex",
-      "bibtex",
-      "xelatex",
-      "xelatex"
-    ]
-},
+
+  {
+      "name": "xelatex ➞ bibtex ➞ xelatex",
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+      ]
+  },
 
 ***********************
 How to add chapter

@@ -1,0 +1,55 @@
+\documentclass[phd]{buptthesis}
+
+\BUPTthesiscntitlepage{%
+	title = {英语学习},
+	studentid = {2019},
+	name = {ITS小组},
+	major = {信息与通信工程},
+	supervisor = {张},
+	institute = {人工智能学院},
+	degreetype = {工学}}
+
+%% \quad 相当于一个汉字的宽度，同时也相当于~~~~
+
+\BUPTthesisentitlepage{%
+	title = {A \LaTeX~TEMPLATE FOR PHD DISSERTATION OF BUPT},
+	desc = {A DISSERTATION\\SUBMITTED TO THE FACULTY OF THE GRADUATE\\SCHOOL OF BEIJING UNIVERSITY OF POSTS AND\\TELECOMMUNICATIONS},
+	name = {BY\\DOCTOR},
+	supervisor = {PROF. SOMEONE, PH.D. ADVISOR},
+	major = {INFORMATION AND COMMUNICATIONS ENGINEERING},
+	degree = {FOR THE DEGREE OF
+		\\ DOCTOR OF PHILOSOPHY IN\\INFORMATION AND COMMUNICATIONS ENGINEERING}
+}
+\begin{document}
+
+% \makechinesetitle
+% \makeenglishtitle
+% \makestatement
+
+\frontmatter
+% \include{Chapter/Chapter_cnabstract}
+% \include{Chapter/Chapter_enabstract}
+\tableofcontents
+% \listoffigures
+% \listoftables
+% \include{Chapter/Chapter_nomenclature}
+
+\mainmatter
+% \include{Chapter/Chapter_introduction}
+% \include{Chapter/Chapter_architecture}
+% \include{Chapter/Chapter_algorithm}
+
+\include{Chapter/Chapter__Background}
+\include{Chapter/Chapter__Challenge}
+\include{Chapter/Chapter__Method}
+\include{Chapter/Chapter__Simulation}
+\include{Chapter/Chapter___Phrases}
+
+\bibliography{Bib/thesis}
+
+\backmatter
+% \include{Chapter/Chapter_abbreviation}
+% \include{Chapter/Chapter_acknowledgement}
+% \include{Chapter/Chapter_publication}
+
+\end{document}

@@ -1,4 +1,6 @@
 ==================
+Paper English Learning 
+based on a template of
 Thesis LaTeX Template for Beijing University of Posts and Telecommunications
 ==================
 
@@ -31,6 +33,8 @@ Recommended Editor
 
 `TeXStudio <http://www.texstudio.org/>`_
 
+`Visual Studio Code <https://code.visualstudio.com/>`  + `TexLive <http://tug.org/texlive/>`
+
 ******************
 How to compile
 ******************
@@ -50,6 +54,35 @@ How to compile
 - Compile by TeXStudio
 
 Configure the TeXStudio to use ``xelatex`` as default compiler and press compile button.
+
+- Compile by Visual Studio Code + TexLive
+
+Add the following compile instructions at the corresponding position in settings.json:
+
+::
+{
+    "name": "xelatex",
+    "command": "xelatex",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "%DOC%"
+    ]
+},
+
+and
+
+::
+{
+    "name": "xelatex ➞ bibtex ➞ xelatex",
+    "tools": [
+      "xelatex",
+      "bibtex",
+      "xelatex",
+      "xelatex"
+    ]
+},
 
 ***********************
 How to add chapter
